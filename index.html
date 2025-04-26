@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My personal website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/836dc3bf6b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="image/logo.png.png"  class="logo">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about me">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>flowers seller</p>
+                <h1>Hi,I'm<span>Shelly</span><br>from Thohoyandou</h1>
+            </div>
+        </div>
+    </div>
+    <!-----------about---------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image/user png.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">about me</h1>
+                    <p>I'm shelly a flower seller from Thohoyandou. I am a hardworking and dedicated person who is always looking for new challenges. I have a passion for flowers and plants and I  learn about different types of flowers and how to care for them.
+                     I have been in the industry for 2 years I am always looking for new ways to improve my skills and to learn more about the industry. I am also very interested in business . I believe that flowers are very important for special occasions and I want to help people to make their events more beautiful with flowers.</p>
+                    
+                     <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('academic background')">academic background</p>
+                        <p class="tab-links" onclick="opentab('skills and tools')">skils and tools</p>
+                        <p class="tab-links" onclick="opentab('academic goals')">academic goals</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="academic background">
+                        <ul>
+                            <li><span>2018-2020</span><br>current studying floriculture</li>
+                            <li><span>2022</span><br>diploma in horticulture</li>
+                            <li><span>learning</span><br>ecosystem interaction </li> 
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="skills and tools">
+                        <ul>
+                            <li><span>flower arregement</span><br>using flower shears</li>
+                            <li><span>basic mathk</span><br>using tap measuring</li>
+                            <li><span>customer service</span><br>using traditional method to handle inventory</li> 
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="academic goals">
+                        <ul>
+                            <li><span>2025</span><br>improving product knowlege</li>
+                            <li><span>2026</span><br>develop more business skills</li>
+                            <li><span>2028</span><br>pursue certifications</li> 
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>               
+<!---project-->
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">Projects</h1>
+        <div class="project-list">
+            <div class="projects">
+                <img src="image/flower1.jpg" >
+                    <h3>Flower menu</h3>
+                    <p>This is a flower menu that I created for my flower shop. It includes all the flowers that I sell, their prices, and a brief description of each flower. I used Canva to create this menu and I am very proud of it. I believe that it is very important to have a good menu in order to attract customers and to make sales.</p>
+                </div>
+            <div class="projects">
+                <img src="image/flower2.jpg" >
+                    <h3>Flower arregement</h3>
+                    <p>This is a flower arrangement that I created for a wedding. I used a variety of flowers and I arranged them in a way that I thought would be beautiful. I am very proud of this arrangement and I believe that it is one of my best works. I believe that flower arrangements are very important for weddings and other special occasions.</p>
+            </div>
+                </di>
+            </div>
+        </div>
+    </div>
+</div>
+        <!--------contact------->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">contact me</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i>mathoboshelly@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i>0711287427</p>
+                        <div class="social-icons">
+                            <a href=""><i class="fab fa-facebook"></i></a>
+                            <a href=""><i class="fab fa-whatsapp"></i></a>
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                            <button>
+                            <a href="https://github.com/24030700/web-design" target="_blank">github</a>
+                        </button>
+                        </div>
+                    </div>
+                    <div class="contact-right">  
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>copyright @ shelly made with<i class="fa-solid fa-heart"></i></p>
+            </div>
+        </div>
+
+<script>
+
+    var tablink = document.getElementById("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+        for (tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        document.getElementById(tabname).classList.add("active-tab");
+
+        for (tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+</body>
+</html>
